@@ -37,6 +37,7 @@ def get_votes_by_date(chamber, start_date, end_date):
 
     ###################
 
+    # response = requests.get(url, headers={'chamber': chamber, 'start_date': start_date, 'end_date': end_date, "X-API-Key": API_KEY}).content
     response = requests.get(url, headers={'chamber': chamber, 'start_date': start_date, 'end_date': end_date, "X-API-Key": API_KEY}).content
 
     ###################
@@ -52,32 +53,32 @@ def get_votes_by_date(chamber, start_date, end_date):
 
 def format_nomination_votes(data):
 
-    output = [['date', 'question', 'description', 'result', 'yes', 'no', 'present', 'not_voting']] 
+    output = [] 
 
     ###################
 
     # QUESTION 4: Dig through the response to pull out the data corresponding to each item below. Use
     # the "date" variable as an example, and rely on your knowledge of dictionary and list lookup syntax.
 
-    for vote in data['results']['votes']: 
+    results_list = data['results']['votes']
 
-        date = ['date']
+    for vote in results_list: 
 
-        question = ['question']
+        date = vote['date']
 
-        description = ['description']
+        question = vote['question']
 
-        result = ['result']
+        description = vote['description']
 
-        yes = ['total']['yes']
+        result = vote['result']
 
-        no = ['total']['no']
+        yes = vote['total']['yes']
 
-        present = ['total']['present']
+        no = vote['total']['no']
 
-        not_voting = ['total']['not_voting']
+        present = vote['total']['present']
 
-    ###################
+        not_voting = vote['total']['not_voting']
 
         output.append([date, question, description, result, yes, no, present, not_voting])
 
@@ -88,6 +89,7 @@ def format_nomination_votes(data):
 
 if __name__ == '__main__':
     votes = get_votes_by_date('senate', '2017-04-06', '2017-04-06')
+    print votes
 
     if votes == None:
         print "Looks like you haven't finished implementing the get_votes_by_date method ..."
