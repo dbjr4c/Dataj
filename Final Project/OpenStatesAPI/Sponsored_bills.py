@@ -18,9 +18,7 @@ def get_votes():
             data = json.loads(response.content)
             print data, len(item)
 
-        else: 
-        
-            print "no information"
-
+            with open('boone_county.json', 'w') as output:
+                json.dump(data, output)
 
 get_votes()
