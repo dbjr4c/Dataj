@@ -13,3 +13,9 @@ While Gov. Greitens' scandal did slow down legislation, the finding I found most
 This folder contains the python tools I built to interact with the Google Maps API. These tools were used to convert a fairly large data set of all of the shots fired in Columbia, Missouri within the past few years into plotable coordinates. Originally, the data set only contained addresses, many partial, so after some cleaning, I built a script that ran each row through the Google Maps API and converted the addresses to coordinates so that my colleague, John Sadler, could then map the shots in Tableau. 
 
 [Finished graphic](https://www.columbiamissourian.com/visuals/shots-fired-and-heard-in-columbia-since-jan/html_a6d128e8-e066-11e7-91cd-2fea0e3fee22.html)
+
+## Misc
+
+The rest of the files are miscellaneous projects I did for my data journalism class taught by Chase Davis. 
+
+If you have any questions or would like to reach out to me, you can find me on Twitter at @DylBJackson or email me at Dylbjackson@gmail.com
