@@ -18,4 +18,4 @@ This folder contains the python tools I built to interact with the Google Maps A
 
 The rest of the files are miscellaneous projects I did for my data journalism class taught by Chase Davis. 
 
-If you have any questions or would like to reach out to me, you can find me on Twitter at @DylBJackson or email me at Dylbjackson@gmail.com
+If you have any questions or would like to reach out to me, you can find me on Twitter at [@DylanBJackson](https://twitter.com/DylanBJackson) or email me at Dylbjackson@gmail.com
