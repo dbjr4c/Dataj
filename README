@@ -1,6 +1,6 @@
-This repository holds projects I worked on in 2017. 
+##Final Project 
 
-Final Project contains the python tools I used to pull down bill names and descriptions for a story I wrote for the Columbia Missourian. In the midst of former Missouri Governor Eric Greitens' scandal, the government was essentially at a standstill. Legislators and the press corps alike would also gripe "this has to be the least productive year for legislation in recent memory." 
+This folder contains the python tools I used to pull down bill names and descriptions for a story I wrote for the Columbia Missourian. In the midst of former Missouri Governor Eric Greitens' scandal, the government was essentially at a standstill. Legislators and the press corps alike would also gripe "this has to be the least productive year for legislation in recent memory." 
 
 Problem was, nobody knew how many bills were introduced vs. passed in the previous years. Nobody knew definitively even how many bills were passed two years ago. So, I decided to endeavor to answer this question. I used the OpenStates API to pull introduced and signed bills and the sponsors. Using a simple script, I also pulled down all of the local Boone County legislator's information for a story we eventually turned into a "report card."
 
